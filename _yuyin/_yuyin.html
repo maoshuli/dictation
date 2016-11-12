@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>_语音</title>
+</head>
+<body>
+    <div id="yuyin">
+        <audio src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=2&text='测试百度'" controls="controls">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+    <input id="input" type="text" value="输入语音">
+    <input id="button" type="button" value="试听">
+
+    <!-- 用 js 控制播放 -->
+    <input id="start" type="button" value="播放">
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="_yuyin.js"></script>
+</body>
+</html>

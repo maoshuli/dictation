@@ -63,8 +63,33 @@ $(function(){
     // 应作答题目编号
     var subject = [];
 
+    // 题目总数，用 resource.length-1
+    var max = resource.length-1;
+    console.log(resource.length-1);
+    // 应该答题的数目
+    var item = 4;
 
-    (function(){
+    // 生成随机答题号码，存放在 subject 中
+    function buildSubject (max, item){ // 题号从 1 到 max；取 item 道题目
+        var localArr = [];
+        for(var i =0; i < max; i++){
+            localArr[i] = i + 1;
+        }
+        
+        //排序
+        localArr.sort(function() {
+            return 0.5 - Math.random();
+        }); 
+
+        // 取出需要的数组
+        subject = localArr.slice(0, item);
+    }
+    buildSubject(max, item); //执行函数
+    console.log(subject); // 打印出答题题号
+
+
+
+ /*   (function(){
         $('#index .start').click(function(){
             $('#index').hide();
             class1();
@@ -88,6 +113,7 @@ $(function(){
         };
     };
     random(3, 4);
+*/
 
 
 
@@ -99,12 +125,4 @@ $(function(){
 
 
 
-
-
-
-
-
-
-
-
-});
+}); // jq函数结束
