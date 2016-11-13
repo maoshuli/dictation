@@ -106,7 +106,7 @@ $(function(){
 
             // 执行显示第一个题目函数
             function first(){
-                $('#main').html('<div id="subject"><div class="subject subject-' + subject[0][0] + '"><div class="audio"><audio src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=2&text=\'' + subject[0][1] + '\'" controls="controls">不支持格式，换个好点的浏览器吧！</audio></div><div class="choice"><label><input type="radio" name="choice">' + subject[0][2] + '</label><label><input type="radio" name="choice">' + subject[0][3] + '</label><label><input type="radio" name="choice">' + subject[0][4] + '</label><label><input type="radio" name="choice">' + subject[0][5] + '</label></div><div class="submit"><input id="nextSubject" type="submit" value="下一题"></div></div></div>');
+                $('#main').html('<div id="subject"><div class="subject subject-' + subject[0][0] + '"><div class="audio"><audio src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=2&text=\'' + subject[0][1] + '\'" controls="controls" autoplay="autoplay">不支持格式，换个好点的浏览器吧！</audio></div><div class="choice"><label><input type="radio" name="choice">' + subject[0][2] + '</label><label><input type="radio" name="choice">' + subject[0][3] + '</label><label><input type="radio" name="choice">' + subject[0][4] + '</label><label><input type="radio" name="choice">' + subject[0][5] + '</label></div><div class="submit"><input id="nextSubject" type="submit" value="下一题"></div></div></div>');
             }
             first();
        
@@ -150,7 +150,7 @@ $(function(){
         }
 
         // 进入下一题
-        $('#main').html('<div id="subject"><div class="subject subject-' + subject[currentIndex+1][0] + '"><div class="audio"><audio src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=2&text=\'' + subject[currentIndex+1][1] + '\'" controls="controls">不支持格式，换个好点的浏览器吧！</audio></div><div class="choice"><label><input type="radio" name="choice">' + subject[currentIndex+1][2] + '</label><label><input type="radio" name="choice">' + subject[currentIndex+1][3] + '</label><label><input type="radio" name="choice">' + subject[currentIndex+1][4] + '</label><label><input type="radio" name="choice">' + subject[currentIndex+1][5] + '</label></div><div class="submit"><input id="nextSubject" type="submit" value="下一题"></div></div></div>');
+        $('#main').html('<div id="subject"><div class="subject subject-' + subject[currentIndex+1][0] + '"><div class="audio"><audio src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=2&text=\'' + subject[currentIndex+1][1] + '\'" controls="controls" autoplay="autoplay">不支持格式，换个好点的浏览器吧！</audio></div><div class="choice"><label><input type="radio" name="choice">' + subject[currentIndex+1][2] + '</label><label><input type="radio" name="choice">' + subject[currentIndex+1][3] + '</label><label><input type="radio" name="choice">' + subject[currentIndex+1][4] + '</label><label><input type="radio" name="choice">' + subject[currentIndex+1][5] + '</label></div><div class="submit"><input id="nextSubject" type="submit" value="下一题"></div></div></div>');
 
 
     }
